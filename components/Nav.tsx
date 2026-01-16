@@ -63,12 +63,12 @@ export function Nav() {
               onClick={() => setOpen(false)}
             >
               <Image
-                src="/logo1.jpg"
+                src="/widelogo.jpg"
                 alt="Fuel and Fire Mobile Mechanic logo"
-                width={200}
-                height={54}
+                width={260}
+                height={60}
                 priority
-                sizes="(min-width: 768px) 200px, 160px"
+                sizes="(min-width: 768px) 260px, 200px"
                 className="h-10 w-auto rounded-md object-contain"
               />
             </a>
@@ -153,11 +153,11 @@ export function Nav() {
               onClick={() => setOpen(false)}
             >
               <Image
-                src="/logo1.jpg"
+                src="/widelogo.jpg"
                 alt="Fuel and Fire Mobile Mechanic logo"
-                width={180}
-                height={50}
-                sizes="180px"
+                width={220}
+                height={54}
+                sizes="220px"
                 className="h-10 w-auto rounded-md object-contain"
               />
             </a>
