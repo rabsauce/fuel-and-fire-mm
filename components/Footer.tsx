@@ -1,8 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Facebook, Instagram, Youtube, Phone, MapPin } from "lucide-react";
 
 import { Container } from "@/components/Container";
-import { LogoMark } from "@/components/LogoMark";
 import { site } from "@/lib/site";
 
 export function Footer() {
@@ -12,7 +12,14 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <div className="flex items-center gap-3">
-              <LogoMark className="h-9 w-9" />
+              <Image
+                src="/logo1.jpg"
+                alt="Fuel and Fire Mobile Mechanic logo"
+                width={44}
+                height={44}
+                sizes="44px"
+                className="h-11 w-11 rounded-lg object-contain"
+              />
               <div>
                 <div className="font-[var(--font-display)] text-lg font-extrabold text-brand">
                   Fuel and Fire

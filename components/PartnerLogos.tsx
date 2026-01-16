@@ -26,6 +26,7 @@ function LogoCard({ name, src }: { name: string; src: string }) {
         alt={`${name} logo`}
         width={140}
         height={44}
+        sizes="140px"
         className="h-10 w-auto object-contain opacity-90 contrast-125 grayscale-[15%] transition group-hover:opacity-100"
       />
     </div>

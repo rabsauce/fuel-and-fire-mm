@@ -1,9 +1,9 @@
+import Image from "next/image";
 import { CheckCircle2, MapPin, ShieldCheck, Sparkles } from "lucide-react";
 
 import { Container } from "@/components/Container";
 import { MotionInView } from "@/components/MotionInView";
 import { site } from "@/lib/site";
-import { LogoMark } from "@/components/LogoMark";
 
 export function About() {
   return (
@@ -64,7 +64,14 @@ export function About() {
               <div className="absolute -bottom-20 -right-16 h-56 w-56 rounded-full bg-[rgba(255,140,0,0.18)] blur-3xl" />
               <div className="relative">
                 <div className="flex items-center gap-3">
-                  <LogoMark className="h-10 w-10" />
+                  <Image
+                    src="/logo1.jpg"
+                    alt="Fuel and Fire Mobile Mechanic logo"
+                    width={52}
+                    height={52}
+                    sizes="48px"
+                    className="h-12 w-12 rounded-lg object-contain"
+                  />
                   <div>
                     <div className="font-[var(--font-display)] text-lg font-extrabold text-white">
                       Fuel and Fire

@@ -1,9 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
-import { BadgeCheck, ChevronDown, Clock3, Shield, Sparkles } from "lucide-react";
+import { BadgeCheck, Clock3, Shield, Sparkles } from "lucide-react";
 
 import { site } from "@/lib/site";
 import { Container } from "@/components/Container";
@@ -64,12 +63,12 @@ export function Hero() {
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.18 }}
               className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center"
             >
-              <Link
+              <a
                 href="#contact"
                 className="inline-flex items-center justify-center rounded-full bg-brand-gradient px-6 py-3 text-sm font-extrabold text-black shadow-glow transition hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
               >
                 {site.primaryCta}
-              </Link>
+              </a>
               <a
                 href={site.phoneHref}
                 className="inline-flex items-center justify-center rounded-full border border-white/15 bg-black/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
@@ -109,14 +108,6 @@ export function Hero() {
           </div>
         </Container>
 
-        <div className="pointer-events-none absolute inset-x-0 bottom-8">
-          <Container>
-            <div className="flex items-center justify-center gap-2 text-xs font-semibold text-zinc-300">
-              <span className="opacity-80">Swipe up</span>
-              <ChevronDown className="h-4 w-4 text-brand" />
-            </div>
-          </Container>
-        </div>
       </div>
     </section>
   );

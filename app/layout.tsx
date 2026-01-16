@@ -14,6 +14,7 @@ const fontDisplay = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://fuel-and-fire-mm.vercel.app"),
   title: "Fuel and Fire Mobile Mechanic | Mobile Car Repair Mableton GA",
   description:
     "Mobile mechanic Mableton GA and Atlanta — at-home car repair for brakes, AC, diagnostics, starters/alternators and more. Fast, honest service with a 12-month/12,000-mile warranty.",
@@ -34,6 +35,15 @@ export const metadata: Metadata = {
     description:
       "Reliable mobile mechanic in Mableton & Atlanta. Brakes, AC, diagnostics & more — no shop hassle.",
     type: "website",
+    url: "/",
+    images: [
+      {
+        url: "/logo1.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Fuel and Fire Mobile Mechanic",
+      },
+    ],
   },
   icons: {
     icon: [{ url: "/logo1.jpg", type: "image/jpeg" }],
@@ -43,6 +53,7 @@ export const metadata: Metadata = {
     title: "Fuel and Fire Mobile Mechanic",
     description:
       "Reliable mobile mechanic in Mableton & Atlanta. Brakes, AC, diagnostics & more — no shop hassle.",
+    images: ["/logo1.jpg"],
   },
 };
 

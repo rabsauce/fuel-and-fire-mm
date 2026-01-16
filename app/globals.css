@@ -21,6 +21,11 @@
     @apply border-zinc-800;
   }
 
+  /* Prevent anchor links from landing under the fixed navbar */
+  section[id] {
+    scroll-margin-top: 96px;
+  }
+
   body {
     background: var(--bg);
     color: var(--text);
